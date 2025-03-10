@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap');
+@import 'tailwindcss';
+@theme {
+	--breakpoint-mobile: 375px;
+	--breakpoint-desktop: 1440px;
+
+	--color-white: hsl(0, 0%, 100%);
+
+	--color-slate-300: hsl(212, 45%, 89%);
+	--color-slate-500: hsl(216, 15%, 48%);
+	--color-slate-900: hsl(218, 44%, 22%);
+	--color-violet-500: hsl(228, 45%, 44%);
+
+	--text-base: 15px;
+
+	--font-outfit: 'Outfit', sans-serif;
+}
+
+html,
+body {
+	@apply font-outfit h-dvh bg-slate-300 text-base;
+}
+
+.page-container {
+	@apply grid h-dvh place-content-center;
+}
+
+.card {
+	@apply flex max-w-[320px] flex-col items-center gap-6 rounded-[20px] bg-white p-4 shadow-lg;
+}
+
+.qrcode {
+	@apply size-[288px] overflow-hidden rounded-[10px];
+}
+
+.description {
+	@apply mb-10 flex flex-col gap-4 px-4;
+
+	& > h1 {
+		@apply text-center text-[22px] leading-[120%] font-bold text-slate-900;
+	}
+
+	& > p {
+		@apply text-center leading-[140%] text-slate-500;
+	}
+}
