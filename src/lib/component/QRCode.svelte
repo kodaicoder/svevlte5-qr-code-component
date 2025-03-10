@@ -1,10 +1,10 @@
 <script lang="ts">
 	interface Props {
 		imageSource: string;
-		header: string;
+		title: string;
 		description: string;
 	}
-	let { imageSource, header, description }: Props = $props();
+	let { imageSource, title, description }: Props = $props();
 </script>
 
 <div class="card">
@@ -12,7 +12,7 @@
 		<img src={imageSource} alt="qr code" />
 	</div>
 	<div class="description">
-		<h1>{header}</h1>
+		<h1>{title}</h1>
 		<p>{description}</p>
 	</div>
 </div>
