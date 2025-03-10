@@ -4,7 +4,7 @@
 	let { children } = $props();
 </script>
 
-<div class="page-container">
+<main class="page-container">
 	{@render children()}
 	<Attribution />
-</div>
+</main>
